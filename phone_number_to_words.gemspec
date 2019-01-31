@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{ Convert phone number to words }
   spec.description   = %q{ Given a 10 digit phone number, you must return all possible words or combination of words from the provided dictionary, that can be mapped back as a whole to the number.}
-  spec.homepage      = "https://rubygems.org/profiles/siva_mca"
+  spec.homepage      = "https://github.com/sivamca19/phone_number_to_words"
   spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.
