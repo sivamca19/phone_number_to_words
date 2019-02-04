@@ -37,6 +37,22 @@ RSpec.describe PhoneNumberToWords do
 
       expect(@words.generate_words('2282668687').first).to include('act')
       expect(@words.generate_words('2282668687').last).to eq('catamounts')
+
+      expect(@words.generate_words('6686787825')).to eq([%w[noun struck],
+                                                         %w[onto struck],
+                                                         %w[motor truck],
+                                                         %w[motor usual],
+                                                         %w[nouns truck],
+                                                         %w[nouns usual],
+                                                         'motortruck'])
+      expect(@words.generate_words('2282668687')).to eq([%w[act amounts],
+                                                         %w[act contour],
+                                                         %w[bat amounts],
+                                                         %w[bat contour],
+                                                         %w[cat amounts],
+                                                         %w[cat contour],
+                                                         %w[acta mounts],
+                                                         'catamounts'])
     end
   end
 end

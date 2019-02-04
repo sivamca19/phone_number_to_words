@@ -31,7 +31,7 @@ module PhoneNumberToWords
     end
 
     def is_valid_no(phone_no)
-      (phone_no.to_s.chars - %w[1 0]).length == 10
+      phone_no.match(/^[2-9]*$/).to_s.length == 10
     end
 
     def generate_words(phone_number)
