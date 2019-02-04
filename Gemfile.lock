@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    phone_number_to_words (0.1.1)
+    phone_number_to_words (0.1.2)
 
 GEM
   remote: https://rubygems.org/
